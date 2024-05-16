@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
     <title>Bakalaura Darbs</title>
-
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Angkor&family=Lilita+One&family=Madimi+One&display=swap" rel="stylesheet">
+
   </head>
   <style>
     p {
@@ -26,29 +30,29 @@
     <header class="header">
       <div class="left-section">
         <img class="hamburger-menu" src="icons/menu-logo.png">
-        <p class="website-logo">Recipes</p>
+        <img class="website-logo" src="icons/recipes.png">
       </div>
       <div class="middle-section">
         <input class="search-bar" type="text" placeholder="Search Recipes">
         <button class="search-button">
-          <div class ="icon-sprite" id="search"></div>
+          <img class="search-icon" src="icons/search-logo.png">
         </button>
       </div>
-		<div class="right-section">
+      <div class="right-section">
         <button class="socials-button">
-          <div class ="icon-sprite" id="instagram"></div>
+          <img class="socials-icon" src="icons/instagram-logo.png">
         </button>
         <button class="socials-button">
-          <div class="icon-sprite" id="twitter"></div>
+        <img class="socials-icon" src="icons/twitter-logo.png">
         </button>
         <button class="socials-button">
-          <div class="icon-sprite" id="pintrest"></div>
+        <img class="socials-icon" src="icons/pinterest-logo.png">
         </button>
         <button class="socials-button">
-          <div class="icon-sprite" id="facebook"></div>
+        <img class="socials-icon" src="icons/facebook-logo.png">
         </button>
         <button class="socials-button">
-          <div class="icon-sprite" id="phone"></div>
+        <img class="socials-icon" src="icons/phone-logo.png">
         </button>
       </div>
     </header>
@@ -84,13 +88,8 @@
         }
 
         .website-logo {
-		  font-size: 40px;
-		  font-family: "Lilita One", sans-serif;
-		  font-weight: 400;
-		  color: rgb(235, 108, 108);
-		  font-style: italic;
-		  text-shadow: -2px 0px 5px rgb(0, 0, 0);    /* horizontal, vertical, blur, color*/
-		}
+          height: 80px;
+        }
 
         .middle-section {
           flex: 1;
@@ -176,76 +175,34 @@
           justify-content: space-between;
           flex-shrink: 0;
         }
-		
-		.icon-sprite {
-		  height: 24px;
-		  width: 24px;
-		  background-image: url('icons/icon-sprites.webp');
-		  display: inline-block;
-		  margin: 0;
-		}
-
-		#clock {
-		  background-position: 0 0;
-		}
-		#facebook {
-		  background-position: -24px 0;
-		}
-		#instagram {
-		  background-position: -48px 0;
-		}
-		#star {
-		  background-position: -72px 0;
-		}
-		#ingredient {
-		  background-position: 0 -24px;
-		}
-		#heart {
-		  background-position: -24px -24px;
-		}
-		#pintrest {
-		  background-position: -48px -24px;
-		}
-		#twitter {
-		  background-position: -72px -24px;
-		}
-		#home {
-		  background-position: 0 -48px;
-		}
-		#phone {
-		  background-position: -24px -48px;
-		}
-		#search {
-		  background-position: -48px -48px;
-		}
         </style>
     <nav class="sidebar">
       <div class="sidebar-link">
-        <div class="icon-sprite" id="home"></div>
+        <img src="icons/home-logo.png">
         <p class="sidebar-title">
           All Recipes
         </p>
       </div>
       <div class="sidebar-link">
-        <div class="icon-sprite" id="clock"></div>
+        <img src="icons/clock-logo.png">
         <p class="sidebar-title">
           Most Recent
         </p>
       </div>
       <div class="sidebar-link">
-        <div class="icon-sprite" id="star"></div>
+        <img src="icons/star-logo.png">
         <p class="sidebar-title">
           Top Rated
         </p>
       </div>
       <div class="sidebar-link">
-        <div class="icon-sprite" id="heart"></div>
+        <img src="icons/heart-logo.png">
         <p class="sidebar-title">
           Favorites
         </p>
       </div>
       <div class="sidebar-link">
-        <div class="icon-sprite" id="ingredient"></div>
+        <img src="icons/ingredient-logo.png">
         <p class="sidebar-title">
           Ingredient Browser
         </p>
@@ -289,7 +246,6 @@
           padding-top: 5px;
         }
     </style>
-    
     <main>
       <section class="recipe-grid">
         <div class="recipe-section">
@@ -301,7 +257,13 @@
               <p class="recipe-title">
                 American Style Pancakes
               </p>
-              <div class ="star-sprite" id="rating-7"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
@@ -315,7 +277,13 @@
               <p class="recipe-title">
                 Spaghetti Bolognese
               </p>
-              <div class ="star-sprite" id="rating-8"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
@@ -329,7 +297,13 @@
               <p class="recipe-title">
                 Cooked Salmon
               </p>
-              <div class ="star-sprite" id="rating-4"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
@@ -343,7 +317,13 @@
               <p class="recipe-title">
                 Pizza Margherita
               </p>
-              <div class ="star-sprite" id="rating-10"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+              </div>
             </div>
           </div>
         </div>
@@ -357,7 +337,13 @@
               <p class="recipe-title">
                 Chicken Wings
               </p>
-              <div class ="star-sprite" id="rating-3"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
@@ -371,7 +357,13 @@
               <p class="recipe-title">
                 Beetroot Soup
               </p>
-              <div class ="star-sprite" id="rating-6"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
@@ -385,7 +377,13 @@
               <p class="recipe-title">
                 Steak
               </p>
-              <div class ="star-sprite" id="rating-5"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
@@ -399,7 +397,13 @@
               <p class="recipe-title">
                 Chocolate Brownies
               </p>
-              <div class ="star-sprite" id="rating-9"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+              </div>
             </div>
           </div>
         </div>
@@ -413,7 +417,13 @@
               <p class="recipe-title">
                 Caesar Salad
               </p>
-              <div class ="star-sprite" id="rating-0"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
@@ -427,7 +437,13 @@
               <p class="recipe-title">
                 Raspberry Cupcakes
               </p>
-              <div class ="star-sprite" id="rating-1"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
@@ -441,7 +457,13 @@
               <p class="recipe-title">
                 Lasagna
               </p>
-              <div class ="star-sprite" id="rating-2"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
@@ -455,511 +477,733 @@
               <p class="recipe-title">
                 Boiled Potatoes
               </p>
-              <div class ="star-sprite" id="rating-7"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-13.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-13.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 American Style Pancakes
               </p>
-              <div class ="star-sprite" id="rating-7"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-14.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-14.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Spaghetti Bolognese
               </p>
-              <div class ="star-sprite" id="rating-8"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-15.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-15.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Cooked Salmon
               </p>
-              <div class ="star-sprite" id="rating-4"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-16.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-16.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Pizza Margherita
               </p>
-              <div class ="star-sprite" id="rating-10"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-17.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-17.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Chicken Wings
               </p>
-              <div class ="star-sprite" id="rating-3"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-18.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-18.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Beetroot Soup
               </p>
-              <div class ="star-sprite" id="rating-6"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-19.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-19.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Steak
               </p>
-              <div class ="star-sprite" id="rating-5"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-20.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-20.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Chocolate Brownies
               </p>
-              <div class ="star-sprite" id="rating-9"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-21.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-21.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Caesar Salad
               </p>
-              <div class ="star-sprite" id="rating-0"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-22.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-22.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Raspberry Cupcakes
               </p>
-              <div class ="star-sprite" id="rating-1"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-23.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-23.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Lasagna
               </p>
-              <div class ="star-sprite" id="rating-2"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-24.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-24.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Boiled Potatoes
               </p>
-              <div class ="star-sprite" id="rating-7"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-25.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-25.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 American Style Pancakes
               </p>
-              <div class ="star-sprite" id="rating-7"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-26.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-26.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Spaghetti Bolognese
               </p>
-              <div class ="star-sprite" id="rating-8"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-27.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-27.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Cooked Salmon
               </p>
-              <div class ="star-sprite" id="rating-4"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-28.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-28.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Pizza Margherita
               </p>
-              <div class ="star-sprite" id="rating-10"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-29.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-29.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Chicken Wings
               </p>
-              <div class ="star-sprite" id="rating-3"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-30.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-30.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Beetroot Soup
               </p>
-              <div class ="star-sprite" id="rating-6"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-31.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-31.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Steak
               </p>
-              <div class ="star-sprite" id="rating-5"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-32.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-32.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Chocolate Brownies
               </p>
-              <div class ="star-sprite" id="rating-9"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-33.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-33.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Caesar Salad
               </p>
-              <div class ="star-sprite" id="rating-0"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-34.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-34.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Raspberry Cupcakes
               </p>
-              <div class ="star-sprite" id="rating-1"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-35.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-35.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Lasagna
               </p>
-              <div class ="star-sprite" id="rating-2"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-36.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-36.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Boiled Potatoes
               </p>
-              <div class ="star-sprite" id="rating-7"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-37.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-37.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 American Style Pancakes
               </p>
-              <div class ="star-sprite" id="rating-7"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-38.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-38.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Spaghetti Bolognese
               </p>
-              <div class ="star-sprite" id="rating-8"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-39.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-39.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Cooked Salmon
               </p>
-              <div class ="star-sprite" id="rating-4"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-40.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-40.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Pizza Margherita
               </p>
-              <div class ="star-sprite" id="rating-10"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-41.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-41.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Chicken Wings
               </p>
-              <div class ="star-sprite" id="rating-3"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-42.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-42.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Beetroot Soup
               </p>
-              <div class ="star-sprite" id="rating-6"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-43.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-43.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Steak
               </p>
-              <div class ="star-sprite" id="rating-5"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-44.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-44.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Chocolate Brownies
               </p>
-              <div class ="star-sprite" id="rating-9"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-half.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-45.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-45.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Caesar Salad
               </p>
-              <div class ="star-sprite" id="rating-0"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-46.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-46.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Raspberry Cupcakes
               </p>
-              <div class ="star-sprite" id="rating-1"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-47.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-47.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Lasagna
               </p>
-              <div class ="star-sprite" id="rating-2"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-empty.png">
+              </div>
             </div>
           </div>
         </div>
         
         <div class="recipe-section">
           <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-48.jpg">
+            <img class="thumbnail" loading="lazy" src="thumbnails/thumbnail-48.jpg">
           </div>
           <div class="recipe-info-grid">
             <div class="recipe-info">
               <p class="recipe-title">
                 Boiled Potatoes
               </p>
-              <div class ="star-sprite" id="rating-7"></div>
+              <div class = "star-grid">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+                <img class="recipe" src="icons/star-full.png">
+              </div>
             </div>
           </div>
         </div>
@@ -1021,48 +1265,6 @@
           column-gap: 16px;
           row-gap: 40px;
         }
-		
-		
-		.star-sprite{
-		  height: 30px;
-		  width: 180px;
-		  background-image: url('icons/rating-sprites.webp');
-		  display: inline-block;
-		  margin: 0;
-		}
-		#rating-0 {
-		  background-position: 0 -6px;
-		}
-		#rating-1 {
-		  background-position: 0 -48px;
-		}
-		#rating-2 {
-		  background-position: 0 -90px;
-		}
-		#rating-3 {
-		  background-position: 0 -132px;
-		}
-		#rating-4 {
-		  background-position: -186px -6px;
-		}
-		#rating-5 {
-		  background-position: -186px -48px;
-		}
-		#rating-6 {
-		  background-position: -186px -90px;
-		}
-		#rating-7 {
-		  background-position: -186px -132px;
-		}
-		#rating-8 {
-		  background-position: 0 -174px;
-		}
-		#rating-9 {
-		  background-position: -186px -174px;
-		}
-		#rating-10 {
-		  background-position: 0 -216px;
-		}
 
         @media (max-width: 900px) {
           .recipe-grid {
