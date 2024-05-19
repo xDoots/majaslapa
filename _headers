@@ -1,2 +1,6 @@
 /*
   Content-Encoding: identity
+  Cache-Control: no-store
+  X-Accel-Expires: 0
+  Edge-Control: no-store
+  Surrogate-Control: no-store
